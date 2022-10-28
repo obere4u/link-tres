@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(236, 230, 230);
+}
+
+header {
+  padding: 5px;
+  background-color: rgba(245, 245, 245, 0.507);
+  margin-top: 2rem;
+  width: 90%;
+  margin-left: 1.5rem;
+}
+
+header img {
+  width: 5%;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: rgba(245, 245, 245, 0.507);
+  text-align: center;
+  width: 50%;
+  transition: background 0.5s, transform 1s;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  border: none;
+  transition: color 0.9s, transform 0.1s;
+  cursor: pointer;
+}
+
+.links:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: rgba(133, 8, 8, 0.466);
+}
+
+.links a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+#books_python div {
+  visibility: hidden;
+}
+
+#books_python:hover div { /* makes the description on python books visible */
+  content: '';
+  visibility: visible;
+}
+
+#books_python h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+}
+
+#books_python span {
+  text-decoration: line-through;
+  font-size: 1rem;
+  margin-left: 1rem;
+  position: absolute;
+  padding-top: 0.1rem;
+  color: black;
+  
+  z-index: -1;
+}
+
+#books_python p {
+  color: red;
+}
+
+footer p {
+  margin: 2rem;
+  text-align: center;
+  font-size: 0.5rem;
+  color: brown;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 600px) {
+
+  header {
+    margin-left: 4.2rem;
+  }
+
+  footer p {
+    color: rgb(182, 18, 18);
+    font-size: 0.6rem;
+    text-align: left;
+  }
+}
